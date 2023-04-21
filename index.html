@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bayan</title>
+    <link rel="icon" href="assets/img/logo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <a href="#!" class="logo">
+      <img
+        src="./assets/img/logo-img.png"
+        alt="logo header"
+        class="logo-header"
+      />
+      <span
+        >&nbsp;&nbsp;Истории из жизни молодых выпускников программистов
+        ^_^</span
+      >
+    </a>
+
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#interview" class="nav-link">Interview</a
+              >&nbsp;|&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+              <a href="#new-job" class="nav-link">New job</a>&nbsp;|&nbsp;
+            </li>
+            <li class="nav-item">
+              <a href="#triumph" class="nav-link">Triumph</a>&nbsp;|&nbsp;
+            </li>
+            <li class="nav-item">
+              <a href="#love" class="nav-link">Other</a>&nbsp;&nbsp;
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="acor-container">
+        <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+        <label for="chacor1">Первые собеседования</label>
+        <div class="acor-body" id="interview">
+          <!-- <img class="my-photo" src="assets/img/n1.png" alt="photo1">  -->
+          <div id="gallery">
+            <div class="photos">
+                <!-- id для поиска картинки чтобы показать и скрыть её -->
+                <!-- data-container для того чтобы найти нужную галерею картинок через дата атрибуты -->
+                <!-- data-item чтобы узнать номер картинки -->
+                <!-- тк картинок и галерей много и чтобы не писать фунцию для каждой картинки и галереи -->
+                <!-- будем использовать дата атрибуты -->
+                <!-- data-active чтобы  вычислять активную катртинку, ту которая сейчас показывается -->
+                <!-- data-animate чтобы узнать есть ли анимация в данный момент -->
+              <img
+                id="img_11"
+                data-container="1"
+                data-item="1"
+                data-active="true"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/nlo1.png"
+              />
+              <img
+                id="img_12"
+                data-container="1"
+                data-item="2"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/nlo2.png"
+              />
+              <img
+                id="img_13"
+                data-container="1"
+                data-item="3"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/nlo3.png"
+              />
+              <img
+                id="img_14"
+                data-container="1"
+                data-item="4"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/nlo4.png"
+              />
+            </div>
+            <div class="buttons">
+              <div class="buttons_move">
+                <!-- data-button чтобы узнать номер галереи с которой в данный момент работает пользователь -->
+                <button id="prev_1" data-button="1" class="prev">Назад</button>
+                <button id="center_1" data-button="1" class="center">
+                  Анимация
+                </button>
+                <button id="next_1" data-button="1" class="next">Вперед</button>
+              </div>
+              <div class="button_auto">
+                <!-- data-slide чтобы включать и выключать авто проигрывание -->
+                <button
+                  id="auto_1"
+                  data-button="1"
+                  data-slide="false"
+                  class="auto"
+                >
+                  авто пролистывание
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="checkbox" name="chacor" id="chacor2" />
+        <label for="chacor2">Когда нашёл первую работу</label>
+        <div class="acor-body" id="new-job">
+          <div id="gallery">
+            <div class="photos">
+              <img
+                id="img_21"
+                data-container="2"
+                data-item="1"
+                data-active="true"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/n1.png"
+              />
+              <img
+                id="img_22"
+                data-container="2"
+                data-item="2"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/n2.png"
+              />
+              <img
+                id="img_23"
+                data-container="2"
+                data-item="3"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/n3.png"
+              />
+              <img
+                id="img_24"
+                data-container="2"
+                data-item="4"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/n4.png"
+              />
+            </div>
+            <div class="buttons">
+              <div class="buttons_move">
+                <button id="prev_2" data-button="2" class="prev">Назад</button>
+                <button id="center_2" data-button="2" class="center">
+                  Анимация
+                </button>
+                <button id="next_2" data-button="2" class="next">Вперед</button>
+              </div>
+              <div class="button_auto">
+                <button
+                  id="auto_2"
+                  data-button="2"
+                  data-slide="false"
+                  class="auto"
+                >
+                  авто пролистывание
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="checkbox" name="chacor" id="chacor3" />
+        <label for="chacor3">Первые успехи</label>
+        <div class="acor-body" id="triumph">
+          <div id="gallery">
+            <div class="photos">
+              <img
+                id="img_31"
+                data-container="3"
+                data-item="1"
+                data-active="true"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/winner1.png"
+              />
+              <img
+                id="img_32"
+                data-container="3"
+                data-item="2"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/winner2.png"
+              />
+              <img
+                id="img_33"
+                data-container="3"
+                data-item="3"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/winner3.png"
+              />
+              <img
+                id="img_34"
+                data-container="3"
+                data-item="4"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/winner4.png"
+              />
+            </div>
+            <div class="buttons">
+              <div class="buttons_move">
+                <button id="prev_3" data-button="3" class="prev">Назад</button>
+                <button id="center_3" data-button="3" class="center">
+                  Анимация
+                </button>
+                <button id="next_3" data-button="3" class="next">Вперед</button>
+              </div>
+              <div class="button_auto">
+                <button
+                  id="auto_3"
+                  data-button="3"
+                  data-slide="false"
+                  class="auto"
+                >
+                  авто пролистывание
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="checkbox" name="chacor" id="chacor4" />
+        <label for="chacor4">И немного о прочем...</label>
+        <div class="acor-body" id="love">
+          <div id="gallery">
+            <div class="photos">
+              <img
+                id="img_41"
+                data-container="4"
+                data-item="1"
+                data-active="true"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/love1.png"
+              />
+              <img
+                id="img_42"
+                data-container="4"
+                data-item="2"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/love2.png"
+              />
+              <img
+                id="img_43"
+                data-container="4"
+                data-item="3"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/love3.png"
+              />
+              <img
+                id="img_44"
+                data-container="4"
+                data-item="4"
+                data-active="false"
+                data-animate="false"
+                class="my-photo"
+                src="assets/img/love4.png"
+              />
+            </div>
+            <div class="buttons">
+              <div class="buttons_move">
+                <button id="prev_4" data-button="4" class="prev">Назад</button>
+                <button id="center_4" data-button="4" class="center">
+                  Анимация
+                </button>
+                <button id="next_4" data-button="4" class="next">Вперед</button>
+              </div>
+              <div class="button_auto">
+                <button
+                  id="auto_4"
+                  data-button="4"
+                  data-slide="false"
+                  class="auto"
+                >
+                  авто пролистывание
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--       <div></div>
+        <p></p>-->
+      </div>
+    </main>
+
+    <footer>
+      <p></p>
+      <div class="container footer" id="footer">
+        <a href="https://iti.bsuir.by/">
+          <img
+            class="logo-rsschool"
+            src="assets/img/iit_bsuir.png"
+            alt="Logo IIT BSUIR"
+          />
+        </a>
+        <p>04/14/2023</p>
+        <a href="https://github.com/MissisVolk">Volha Yaustratava (github)</a>
+      </div>
+    </footer>
+    <!-- script добавляется только в конце html файла чтобы быть уверенным что html файл загружен -->
+    <script src="./script/script.js"></script>
+    <!--<script>
+        //Получим кнопки Вперед / Назад по селектору, применив метод querySelector и положим их в переменные btn_prev / btn_next.
+        let btn_prev = document.querySelector('#gallery .buttons .prev');
+        let btn_next = document.querySelector('#gallery .buttons .next');
+
+        //Получим кнопки Вперед / Назад по селектору, применив метод querySelector кладка Работа
+        let btn_prev_job = document.querySelector('#gallery .buttons .prev_job');
+        let btn_next_job = document.querySelector('#gallery .buttons .next_job');
+
+
+        // let btn_prev_winner = document.querySelector('#gallery .buttons .prev');
+        // let btn_next_winner = document.querySelector('#gallery .buttons .next');
+        // let btn_prev_love = document.querySelector('#gallery .buttons .prev');
+        // let btn_next_love = document.querySelector('#gallery .buttons .next');
+
+        // querySelectopAll – получает массив элементов, то есть все картинки.
+        let images = document.querySelectorAll('#gallery .photos img');
+        let i = 0; // номер текущей картинки, на экране
+
+        // let images_job = document.querySelectorAll('#gallery_job .photos img');
+        // let j = 0; // номер текущей картинки, на экране
+
+
+        // Для первой карусели. НЛО.
+        btn_next.onclick = function () {
+            images[i].style.display = 'none'; // прячем текущую картину
+            i++; // увеличиваем переменную i на единицу
+            if (i >= images.length) {
+                i = 0; // переменная i равна 0
+            }
+            images[i].style.display = 'block';
+        }
+        btn_prev.onclick = function () {
+            images[i].style.display = 'none';
+            i = i - 1;
+            if (i < 0) {
+                i = images.length - 1;
+            }
+            images[i].style.display = 'block';
+        }
+    </script>-->
+  </body>
+</html>
